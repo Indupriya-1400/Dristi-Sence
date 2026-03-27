@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DristiSense Flood Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>DristiSense Dashboard</h1>
+<p class="subtitle">AI Powered Flood Prediction System</p>
+<div class="stats">
+
+<div class="card">
+<h3>Flood Area</h3>
+<p id="floodArea">--</p>
+</div>
+
+<div class="card">
+<h3>Population</h3>
+<p id="population">--</p>
+</div>
+
+<div class="card">
+<h3>Districts</h3>
+<p id="districts">--</p>
+</div>
+
+<div class="card">
+<h3>Confidence</h3>
+<p id="confidence">--</p>
+</div>
+
+</div>
+<div class="analysis">
+
+<h2>Flood Image Analysis</h2>
+
+<input type="file" id="imageUpload" accept="image/*">
+
+<br><br>
+
+<img id="preview">
+
+<br><br>
+
+<button onclick="analyzeFlood()">Run Flood Analysis</button>
+
+<h3 id="result"></h3>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
